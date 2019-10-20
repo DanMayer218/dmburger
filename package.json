@@ -1,0 +1,24 @@
+{
+  "name": "dmburger",
+  "version": "1.0.0",
+  "description": "Enjoy a nice tasty burger",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanMayer218/dmburger.git"
+  },
+  "author": "Daniel Mayer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanMayer218/dmburger/issues"
+  },
+  "homepage": "https://github.com/DanMayer218/dmburger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "mysql": "^2.17.1"
+  }
+}
