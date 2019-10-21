@@ -1,4 +1,4 @@
-# Node Express Handlebars
+<!-- # Node Express Handlebars
 
 ### Overview
 
@@ -124,7 +124,7 @@ Having an active and healthy commit history on GitHub is important for your futu
 
     * Also inside `burger.js`, create the code that will call the ORM functions using burger specific input for the ORM.
 
-    * Export at the end of the `burger.js` file.
+    * Export at the end of the `burger.js` file. -->
 
 #### Controller setup
 
