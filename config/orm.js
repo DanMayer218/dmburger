@@ -1,5 +1,7 @@
+// Import connection.js
 var connection = require("../config/connection");
 
+// Helper function for sql syntax
 function createQmarks(num) {
     var arr = [];
     for (var i = 0; i < num; i++) {
@@ -21,18 +23,21 @@ function createQmarks(num) {
     }
     return arr.toString();
   }
-  
+  // Var to perform Create Read Update and Delete actions with the database
   var orm = {
     selectAll: function(table, cb) {
+      // Selects everything from the table
       var dbQuery = "SELECT * FROM " + table + ";";
   
       connection.query(dbQuery, function(err, res) {
         if (err) {
           throw err;
         }
+        // Callback
         cb(res);
       });
     },
+    // The Create function for the database
     insertOne: function(table, cols, vals, cb) {
       var dbQuery =
         "INSERT INTO " +
@@ -49,9 +54,11 @@ function createQmarks(num) {
         if (err) {
           throw err;
         }
+        // Callback results
         cb(res);
       });
     },
+      // Update function for the database
     updateOne: function(table, objColVals, condition, cb) {
       var dbQuery =
         "UPDATE " +
@@ -70,6 +77,7 @@ function createQmarks(num) {
         cb(res);
       });
     },
+    // Delete function for the database
     deleteOne: function(table, condition, cb) {
       var dbQuery = "DELETE FROM " + table + " WHERE " + condition;
       console.log(dbQuery);
@@ -82,4 +90,5 @@ function createQmarks(num) {
       });
     }
   };
+  // Exports all the var orm functions to be used in other js project files
   module.exports = orm;
