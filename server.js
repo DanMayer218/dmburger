@@ -2,6 +2,7 @@ var express = require("express");
 var exphbs = require("express-handlebars");
 var bodyParser = require("body-parser");
 var jq = require("jquery");
+var nodemon = require('nodemon');
   var app = express();
   var PORT = process.env.PORT || 3306;
   // app.get('/', function (req, res) {
