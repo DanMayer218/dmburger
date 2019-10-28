@@ -3,7 +3,7 @@ var exphbs = require("express-handlebars");
 var bodyParser = require("body-parser");
 var jq = require("jquery");
   var app = express();
-  var PORT = process.env.PORT || 3000;
+  var PORT = process.env.PORT || 3306;
   // app.get('/', function (req, res) {
   //   res.send('Hello World')
   // })
@@ -24,6 +24,6 @@ var jq = require("jquery");
 
 
   app.listen(PORT, function() { 
-    console.log("Server listening on: http://localhostL:" + PORT);
+    console.log("Server listening on: http://localhost:" + PORT);
 });
   
